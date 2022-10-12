@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 require('dotenv').config();
 const app = express();
 
+// console.log(process.env);
+
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
